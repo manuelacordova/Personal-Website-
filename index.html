@@ -1,23 +1,152 @@
 <!DOCTYPE html>
-<style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuela's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            scroll-behavior: smooth; 
+        }
+        header {
+            background-color: #6a5acd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #483d8b;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px; 
+        }
+        h1, h2 {
+            color: #483d8b;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #6a5acd;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #6a5acd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Manuela's Personal Website</h1>
+    </header>
 
-  body::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
-  }
-</style>
-    
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#gbda">GBDA</a>
+        <a href="#routine">My Routine</a>
+        <a href="#hobbies">Hobbies & Goals</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Manuela! I'm a 19-year-old second year GBDA student at the University of Waterloo. I'm passionate about art, design, and music. I love exploring creative outlets and sharing my journey with others. Welcome to my site!</p>
+        <div class="image-container">
+            <img src="aboutme1.JPEG" alt="About Me" width="200" height="auto">
+            <img src="aboutme2.JPG" alt="Another Picture of Me" width="300" height="auto">
+        </div>
+    </section>
+
+    <section id="gbda">
+        <h2>GBDA</h2>
+        <p>The Global Business and Digital Arts (GBDA) program combines creativity, business, and technology. It's an exciting journey where I get to explore design thinking, digital media, hands-on projects, frequent collaboration, and more.</p>
+      <p>Learn more about the GBDA program on <a href="https://uwaterloo.ca/stratford-school-of-interaction-design-and-business/global-business-and-digital-arts" target="_blank">this website</a>.</p>
+        <img src="POSTERS.jpg" alt="GBDA Illustration" width="300" height="auto">
+    </section>
+
+    <section id="routine">
+        <h2>My Routine</h2>
+        <p>Staying organized is key to managing my busy schedule. I need to balance academics, social time, my part-time job, and personal downtime as well. I use digital planners and set reminders for all my tasks. Here are my top tips for staying on track:</p>
+        <ul>
+            <li>Plan your day the night before.</li>
+            <li>Set achievable goals.</li>
+            <li>Take regular breaks to recharge.</li>
+        </ul>
+        <img src="organizationpic.jpg" alt="Organization Tips" width="300" height="auto">
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies & Goals</h2>
+        <p>In my free time, I enjoy:</p>
+        <ul>
+            <li>Exploring fashion and interior design.</li>
+            <li>Listening to music and experimenting with production.</li>
+            <li>Spending time with my foster cat, Simba.</li>
+        </ul>
+        <p>My goals include mastering music production, and finding a job in a creative field like graphic design, sound design, fashion, or interior design.</p>
+        <img src="simba.jpg" alt="Hobbies and Goals" width="300" height="auto">
+        
+        <table>
+            <tr>
+                <th>Hobby</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Fashion Design</td>
+                <td>Creating unique, sustainable clothing.</td>
+            </tr>
+            <tr>
+                <td>Music Production</td>
+                <td>Producing electronic and pop music.</td>
+            </tr>
+            <tr>
+                <td>Interior Design</td>
+                <td>Designing spaces that inspire creativity.</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>Contact me: <a href="mailto:micordov@uwaterloo.ca">micordov@uwaterloo.ca</a></p>
+    </footer>
+</body>
+</html>
